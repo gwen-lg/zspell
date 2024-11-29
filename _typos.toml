@@ -1,0 +1,9 @@
+[files]
+extend-exclude = [
+    "dictionaries/*",
+    "test-suite/*",
+    "zspell/tests/files/*",
+    "zspell/benches/*",
+    "*.test",
+    "CHANGELOG.md",
+]
