@@ -449,7 +449,7 @@ pub struct WordEntry<'dict, 'word> {
     context: WordCtx<'dict>,
 }
 
-impl<'dict, 'word> fmt::Debug for WordEntry<'dict, 'word> {
+impl fmt::Debug for WordEntry<'_, '_> {
     #[inline]
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         // exclude the dictionary
@@ -477,7 +477,7 @@ enum WordCtx<'dict> {
     },
 }
 
-impl<'dict, 'word> WordEntry<'dict, 'word> {
+impl WordEntry<'_, '_> {
     /// Return true if the word is spelled correctly.
     ///
     /// If you only need correctness checking, it can be easier to go through
@@ -793,7 +793,7 @@ impl<'a> DictBuilder<'a> {
     }
 }
 
-impl<'a> Default for DictBuilder<'a> {
+impl Default for DictBuilder<'_> {
     #[inline]
     fn default() -> Self {
         Self::new()
