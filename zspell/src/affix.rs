@@ -148,7 +148,7 @@ pub struct CompoundConfig {
     /// Words with this flag may be in the middle of a compound
     middle_flag: Option<Flag>,
 
-    /// Words with this Flagg can't be on their own, only in compounds
+    /// Words with this flag can't be on their own, only in compounds
     only_flag: Option<Flag>,
 
     /// Allow these words inside compounds

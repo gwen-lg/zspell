@@ -159,7 +159,7 @@ impl Dictionary {
     /// Check words in a string, returning a list of the start and end indices
     /// of any incorrect words.
     ///
-    /// This can be used ot create spellcheckers that provide feedback to a
+    /// This can be used to create spellcheckers that provide feedback to a
     /// user.
     ///
     /// ```
@@ -189,7 +189,7 @@ impl Dictionary {
     ///    itself (both have lifetime `'d`) since it calls some internal
     ///    functions
     /// 3. Lifetimes 2: the strings in the returned iterator values can't
-    ///    outlive the input string (both have lifetime `'a` since the resturn values
+    ///    outlive the input string (both have lifetime `'a` since the returns values
     ///    are just references to the input string)
     ///
     /// Still hitting lifetime errors? Just `.collect()` it into a vector like
@@ -701,7 +701,7 @@ impl WordList {
     }
 }
 
-/// A builder stucture that is used to create a [`Dictionary`].
+/// A builder structure that is used to create a [`Dictionary`].
 ///
 /// See module-level documentation for an example.
 #[must_use]
@@ -762,7 +762,7 @@ impl<'a> DictBuilder<'a> {
     ///
     /// Returns an error if anything went wrong with parsing, or if the builder
     /// was in some way misconfigured.
-    // PERF: parallize parsing of affix & dict files
+    // PERF: parallelize parsing of affix & dict files
     #[inline]
     pub fn build(self) -> Result<Dictionary, Error> {
         if self.cfg.is_some() && self.cfg_src.is_some() {
