@@ -8,7 +8,7 @@
 //! A Hunspell dictionary format has three main components:
 //!
 //! - An "affix" or "config" file, usually with extension `.aff`
-//! - A dictionary word list file, ususally `.dic` or `.dict`
+//! - A dictionary word list file, usually `.dic` or `.dict`
 //! - An optional personal dictionary
 //!
 //! You will need to know the location of dictionary files on your system, or
@@ -109,7 +109,7 @@
 //! These flags can be enabled in your `Cargo.toml` if you would like to
 //! experiment with these featuers. Any APIs protected behind these feature
 //! flags are subject to change, but the need for these flags will be removed as
-//! they are stabalized.
+//! they are stabilized.
 //!
 //! [Hunspell]: http://hunspell.github.io/
 //! [CLI docs]: https://pluots.github.io/zspell/

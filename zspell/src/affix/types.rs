@@ -94,7 +94,7 @@ impl FlagType {
             FlagType::Ascii => Self::parse_str_ascii(flag),
             // Single unicode character
             FlagType::Utf8 => Self::parse_str_utf8(flag),
-            // Two asii chars
+            // Two ascii chars
             FlagType::Long => Self::parse_str_long(flag),
             FlagType::Number => Self::parse_str_number(flag),
         }

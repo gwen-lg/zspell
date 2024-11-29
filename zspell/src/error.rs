@@ -24,12 +24,12 @@ pub enum Error {
     Io(IoError),
 }
 
-/// An error that occured while parsing, consisting of an error variant and a
+/// An error that occurred while parsing, consisting of an error variant and a
 /// location
 #[non_exhaustive]
 #[derive(Clone, Debug, PartialEq)]
 pub struct ParseError {
-    /// The error that occured
+    /// The error that occurred
     err: Box<ParseErrorKind>,
     /// Approximate location of the error in source
     span: Option<Span>,
@@ -37,7 +37,7 @@ pub struct ParseError {
     ctx: String,
 }
 
-/// A representation of where a [`ParseError`] occured
+/// A representation of where a [`ParseError`] occurred
 #[non_exhaustive]
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Span {
