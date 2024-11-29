@@ -6,8 +6,8 @@ native and does not rely on any other backends (Enchant, Hunspell, Aspell,
 etc.). This library also has the goal of being usable via WASM. Full Unicode
 support is baked in.
 
-The library side has a stabalized checker, but the suggestion API is not yet
-finalized. The CLI is usable but not yet considered stabalized. See
+The library side has a stabilized checker, but the suggestion API is not yet
+finalized. The CLI is usable but not yet considered stabilized. See
 [Feature Status](#feature-status) for more information on what is available.
 
 Here are some useful quick links:
