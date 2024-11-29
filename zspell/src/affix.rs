@@ -484,7 +484,5 @@ pub struct CompiledFlags {
     pub rule_flags: BTreeMap<Flag, FlagValue>,
 }
 
-/// Indicate a kind of flag
-
 #[cfg(test)]
 mod tests;
